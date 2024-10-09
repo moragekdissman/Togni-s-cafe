@@ -249,6 +249,7 @@ main {
     cursor: pointer;
     width: 130px;
     border-radius: 20px;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .ubicacion-header {
@@ -267,15 +268,65 @@ main {
     width: 30%;
 }
 
-#ubicacion {
-    width: 90%;
-    margin: 0 auto 100px auto;
+#contacto {
+    padding: 12px;
 }
 
-#ubicacion iframe {
+.form-contacto form > div {
+    margin-bottom: 10px;
+}
+
+.form-contacto form > div label {
     width: 100%;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form-contacto form > div input, textarea {
+    width: 100%;
+    padding: 7px 5px;
+    border: 1px solid #365F3D;
+}
+
+.form-contacto form > div textarea {
+    height: 150px;
+}
+
+.boton-contacto {
+    margin-top: 7px;
+    padding: 10px;
+    width: 120px;
+    border: #365F3D 1px solid;
+    color: #365F3D;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif !important;
+    background: #FFFFFF;
+}
+
+.boton-contacto:hover, #feedback form > input[type=submit]:hover {
+    background: #FFFFFF;
+    color: #365F3D;
+}
+
+.mapa {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 150px;
     border: 0;
-    height: 300px;
+}
+
+
+#publicidad {
+    text-align: center;
+    padding: 15px 0;
+}
+
+#publicidad iframe {
+    height: 600px !important;
 }
 
 
@@ -379,14 +430,24 @@ main {
         width: 48%;
     }
 
-    .ubicacion-header {
-        width: 700px;
-        margin: 0 auto 40px auto;
+    #contacto {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
-    .ubicacion-header h2 {
-        font-size: 50px
+    #contacto > div {
+        width: 48%;
     }
+
+    .mapa iframe {
+        height: 100%;
+    }
+
+    #publicidad iframe {
+        height: 90px !important;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -407,5 +468,13 @@ main {
     input[type=submit]:hover {
         background: #365F3D !important;
         color: #FFFFFF !important;
+    }
+
+    #contacto {
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 60px !important;
     }
 }
